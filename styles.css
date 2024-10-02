@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+}
+:root {
+    --button-bg-start: #ff7e5f;
+    --button-bg-end: #feb47b; 
+    --button-font-color: #ffffff; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 60px;
+}
+.navList{
+    display: flex;
+    padding-right: 50px;
+}
+.navLink{
+    background: white;
+    padding: 5px 10px;
+    min-width: 100px;
+    gap: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: black;
+    width: 10px;
+}
+b{
+    font-family: Arial, sans-serif;
+    color: black;
+    display: block;
+    border-radius: 8px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+    text-decoration: none;
+}
+b:hover{
+    background: rgb(253, 253, 253);
+    transform: scale(1.1);
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: white
+}
+.container {
+   
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.main { 
+    display: flex;
+    gap: 40px;
+}
+aside{
+    background: white;
+    padding: 40px 10px;
+    min-width: 250px;
+    gap: 200px;
+    text-align: center;
+    border-radius: 8px;
+    color: black;
+    width: 200px;
+}
+ul{
+    list-style: none;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.href{
+    text-decoration: none;
+    color: #17018b;
+    padding: 100%;
+}
+a{
+    font-family: Arial, sans-serif;
+    color: black;
+    display: block;
+    border-radius: 8px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+}
+a:hover{
+    background: gray;
+    transform: scale(1.1);
+}
+.navList{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.cardBox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    /* margin: 10px; */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05); 
+}
+.card-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+}
+.card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.card-price {
+    color: #f00;
+    font-size: 1em;
+    margin: 10px 0;
+}
+.card-button {
+    background: linear-gradient(135deg, var(--button-bg-start), var(--button-bg-end)); /* Градиентная кнопка */
+    color: var(--button-font-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+}
+.card-button:hover {
+    background: #218838;
+}
+footer{
+    text-align: center;
+    margin-top: 200px;
+    background-color: grey;
+}
+
+@media (max-width: 950px) {
+    .navList{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .cardBox{
+        justify-content: center;
+    }
+    .h1{
+        justify-content: center;
+    }
+    header{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
